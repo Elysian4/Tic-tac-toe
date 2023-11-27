@@ -1,0 +1,73 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(https://images.unsplash.com/photo-1511882150382-421056c89033?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXJjYWRlfGVufDB8fDB8fHww);
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+header {
+    width: 100%;
+    background-color: black;
+    text-align: left;
+    padding: 10px 0; /* adjust the padding as needed */
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between;
+}
+
+.header img {
+    max-width: 100px; /* Set a maximum width for the logo */
+    height: auto; /* Maintain the aspect ratio of the logo */
+    margin-right: 10px;
+}
+
+.header h1 {
+    color: beige;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    margin-top: 80px; 
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* Add a semi-transparent white background to the board */
+    padding: 10px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.status {
+    margin-top: 20px;
+    font-size: 24px;
+    color: aliceblue;
+}
+
+.restart-button {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
